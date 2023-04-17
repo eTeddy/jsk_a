@@ -19,8 +19,9 @@ body {
   width: 280px;
   margin: 15px auto 15px auto;
   padding: 15px;
-  border-radius: 5px 40px 5px 40px;
+  border-radius: 40px 5px 40px 5px;
   text-align: left;
+  border-right: 10px solid #445942;
   border-left: 10px solid #445942;
 }
 #joke_btn {

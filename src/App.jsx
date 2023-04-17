@@ -13,6 +13,7 @@ import { Clock } from "./routes/clock/Clock.jsx";
 import { Jokes } from "./routes/jokes/Jokes.jsx";
 import { Dice } from "./routes/dice/Dice.jsx";
 import { Anime } from "./routes/anime/Anime.jsx";
+import { Weight } from "./routes/weight/Weight.jsx";
 
 export function App(props) {
   const router = createHashRouter(
@@ -23,6 +24,7 @@ export function App(props) {
         <Route path="/jokes" element={<Jokes />} />
         <Route path="/dice" element={<Dice />} />
         <Route path="/anime" element={<Anime />} />
+        <Route path="weight" element={<Weight />} />
       </Route>
     )
   )
@@ -44,6 +46,7 @@ const Root = () => {
         <Link className="item" to="/jokes">🤣</Link>
         <Link className="item" to="/dice">🎲</Link>
         <Link className="item" to="/anime">👱‍♀️</Link>
+        <Link className="item" to="/weight">⚖️</Link>
       </nav>
 
       <div className="outlet">
