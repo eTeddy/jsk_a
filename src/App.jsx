@@ -1,5 +1,6 @@
 import "./App.css"
 import "./routes/clock/style.css"
+import "./routes/dice/main.css"
 import React from "react";
 import { 
   createHashRouter,
@@ -13,8 +14,9 @@ import { Home } from "./routes/Home.jsx"
 import { Dog, dataLoader } from "./routes/Dog.jsx"
 import { Cat } from "./routes/Cat.jsx";
 import { Fox } from "./routes/Fox.jsx";
-import { Clock } from "./routes/clock/Clock";
-import { Jokes } from "./routes/jokes/Jokes";
+import { Clock } from "./routes/clock/Clock.jsx";
+import { Jokes } from "./routes/jokes/Jokes.jsx";
+import { Dice } from "./routes/dice/Dice.jsx";
 
 export function App(props) {
   const router = createHashRouter(
@@ -26,6 +28,7 @@ export function App(props) {
         <Route path="/cat" element={<Cat />} />
         <Route path="/clock" element={<Clock />} />
         <Route path="/jokes" element={<Jokes />} />
+        <Route path="/dice" element={<Dice />} />
       </Route>
     )
   )
@@ -48,6 +51,7 @@ const Root = () => {
         <Link className="item" to="/cat" >Cat</Link>
         <Link className="item" to="/clock" >🕰️</Link>
         <Link className="item" to="/jokes">🤣</Link>
+        <Link className="item" to="/dice">🎲</Link>
       </nav>
 
       <div className="outlet">
