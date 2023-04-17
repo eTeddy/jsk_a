@@ -1,9 +1,11 @@
-import './anime.css'
+import './Anime.css'
 import { useState } from "react";
 
 export const Anime = () => {
+
   const [animeData, setAnimeData] = useState({
-    imgUrl: "https://c.files.bbci.co.uk/F382/production/_123883326_852a3a31-69d7-4849-81c7-8087bf630251.jpg",
+    
+    imgUrl: "https://cdn.catboys.com/images/image_103.jpg",
     name: "Anime Name",
   });
   const [isLoading, setIsLoading] = useState(false);

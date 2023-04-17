@@ -1,6 +1,4 @@
 import "./App.css"
-import "./routes/clock/style.css"
-import "./routes/dice/main.css"
 import React from "react";
 import { 
   createHashRouter,
@@ -10,7 +8,7 @@ import {
   Outlet,
   RouterProvider,
 } from 'react-router-dom';
-import { Home } from "./routes/Home.jsx"
+import { Home } from "./routes/home/Home.jsx"
 import { Clock } from "./routes/clock/Clock.jsx";
 import { Jokes } from "./routes/jokes/Jokes.jsx";
 import { Dice } from "./routes/dice/Dice.jsx";
@@ -42,11 +40,11 @@ const Root = () => {
     <div className="container">
 
       <nav className="link">
-        <Link className="item" to="/">Home</Link>
+        <Link className="item" to="/">🏡</Link>
         <Link className="item" to="/clock" >🕰️</Link>
         <Link className="item" to="/jokes">🤣</Link>
         <Link className="item" to="/dice">🎲</Link>
-        <Link className="item" to="/anime">👧</Link>
+        <Link className="item" to="/anime">👱‍♀️</Link>
       </nav>
 
       <div className="outlet">

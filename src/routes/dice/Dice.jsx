@@ -1,3 +1,4 @@
+import './Dice.css'
 import React, { useState } from 'react';
 
 export const Dice = () => {

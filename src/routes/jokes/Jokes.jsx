@@ -1,4 +1,4 @@
-import './style.css';
+import './Jokes.css';
 import { useState } from 'react';
 
 export const Jokes = () => {
@@ -28,14 +28,12 @@ export const Jokes = () => {
   }
 
   return (
-    <div>
-      <div className="container">
-        <h1 className="heading">Dad Joke Generator</h1>
-        <p className="joke" id="joke">{joke}</p>
-        <button className="btn" id="btn" onClick={getJoke}>Tell me a joke</button>
-      </div>
+    <div id='joke_container'>
+      <h3 id='joke_title'>Dad Joke Generator</h3>
+      <p id="joke_content">{joke}</p>
+      <button id="joke_btn" onClick={getJoke}>New 😆 Joke</button>
     </div>
-  );
+  );    
 }
 
  
