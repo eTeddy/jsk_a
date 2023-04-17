@@ -23,7 +23,6 @@ export function App(props) {
         <Route path="/jokes" element={<Jokes />} />
         <Route path="/dice" element={<Dice />} />
         <Route path="/anime" element={<Anime />} />
-        
       </Route>
     )
   )
